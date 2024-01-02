@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+}
+
+div {
+    background-color: green; /*With opacity*/
+    opacity: 0.5;
+}
+
+p {
+    background-color: rgba(0,128,0,0.3);
+}

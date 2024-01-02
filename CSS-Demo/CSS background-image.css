@@ -1,0 +1,7 @@
+body {
+    background-image: url(sample.gif);
+}
+
+p {
+    background-image: url(sample.jpg); /*Bad Example*/
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Module</title>
+        <link rel="stylesheet" href="css-module.css" type="text/css">
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <ul>
+            <li>
+                <abbr>CSS</abbr>-Cascading Style Sheets.
+            </li>
+            <li>
+                Describes how HTML elements are displayed on screen, paper and other media.
+            </li>
+            <li>
+                Controls layout of multiple web pages all at once.
+            </li>
+            <li>
+                External stylesheets are stored in CSS files.
+            </li>
+            <li>
+                CSS defines styles to the web pages, including design, layout and variations for different devices and screen sizes.
+            </li>
+            <li>
+                HTML was created to carry content and css is for design and layout.
+            </li>
+        </ul>
+
+        <h2>CSS Syntax:</h2>
+
+        <pre>
+            CSS Syntax:
+
+            Selector Declaration
+            h1       {color:blue}
+                     property:value
+        </pre>
+        <ul>
+            <li>
+                Selector points to the HTML element we want to style.
+            </li>
+            <li>
+                Declaration block contains one or more declarations seperated by semicolons.
+            </li>
+            <li>
+                Each declaration includes a CSS property name and a value, seperated by colon.
+            </li>
+            <li>
+                Multiple CSS declarations are separated with semicolons and declaration blocks are surrounded by curly braces.
+            </li>
+            <pre>
+                p {
+                    text-align: center;
+                    color: red;
+                  }
+            </pre>
+            <li>
+                p - selector, text - declaration property and red - declaration value
+            </li>
+        </ul>
+
+        <h2>CSS Selectors:</h2>
+
+        <ul>
+            <li>
+                CSS selectors are used to find oe select the HTML elements we want to style.
+            </li>
+            <ul>
+                <li>
+                    Simple selectors (select elements based on name, id, class)
+                </li>
+                
+                <li>
+                    Combinator selectors (select elements based on a specific relationship between them)
+                </li>
+                <li>
+                    Psuedo class selectors (select elements based on a certain state)
+                </li>
+                <li>
+                    Psuedo elements selectors (select and style a part of an element)
+                </li>
+                <li>
+                    Attribute selectors (select elements based on an attribute or attribute value)
+                </li>
+            </ul>
+        </ul>
+
+    <pre>
+        The CSS element Selector - all p elements on the page will be center-aligned, with a red text color.
+
+            p {
+                text-align: center;
+                color: red;
+                }
+
+        The CSS id selector
+        The id selector uses the id attribute of an HTML element to select a specific element.
+        The id of an element is unique within a page, so the id selector is used to select one unique element!
+        To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+        CSS rule below will be applied to the HTML element with id="para1"
+
+        #para1 {
+            text-align: center;
+            color: red;
+            }   
+
+        The CSS class Selector
+        The class selector selects HTML elements with a specific class attribute.
+        To select elements with a specific class, write a period (.) character, followed by the class name.
+
+        all HTML elements with class="center" will be red and center-aligned.
+
+        .center {
+            text-align: center;
+            color: red;
+          }
+
+        
+        You can also specify that only specific HTML elements should be affected by a class.
+
+        only p elements with class="center" will be red and center-aligned.
+
+        p.center {
+            text-align: center;
+            color: red;
+          }
+
+        
+        HTML elements can also refer to more than one class.
+
+
+        <p class="center large">This paragraph refers to two classes.</p>
+
+          
+        The CSS Universal Selector
+        The universal selector (*) selects all HTML elements on the page.
+
+        * {
+            text-align: center;
+            color: blue;
+          }
+
+        
+        The CSS Grouping Selector
+
+        The grouping selector selects all the HTML elements with the same style definitions.
+        Look at the following CSS code (the h1, h2, and p elements have the same style definitions)
+          
+        h1 {
+            text-align: center;
+            color: red;
+          }
+          
+          h2 {
+            text-align: center;
+            color: red;
+          }
+          
+          p {
+            text-align: center;
+            color: red;
+          }
+
+
+
+        It will be better to group the selectors, to minimize the code. To group selectors, separate each selector with a comma.
+        
+        h1, h2, p {
+            text-align: center;
+            color: red;
+          }
+
+    </pre>
+
+    <h3>All CSS Simple Slectors</h3>
+
+    <table border="1">
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Example Description</th>
+        </tr>
+        <tr>
+            <td>#id</td>
+            <td>#firstname</td>
+            <td>Select the element with id = "firstname"</td>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>Select the element with class = "intro"</td>
+        </tr>
+        <tr>
+            <td>element.class</td>
+            <td>p.intro</td>
+            <td>Selects only p element with class = "intro"</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+        </tr>
+        <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Select all p elements</td>
+        </tr>
+        <tr>
+            <td>element,element</td>
+            <td>div,p</td>
+            <td>Selects all div elements and all p elements</td>
+        </tr>
+    </table>
+
+    <h2>How to Add CSS</h2>
+
+    <p>Three ways to insert CSS</p>
+
+    <ul>
+        <li>
+            External CSS
+        </li>
+        <li>
+            Internal CSS
+        </li>
+        <li>
+            Inline CSS
+        </li>
+    </ul>
+
+    <h3>
+        External CSS
+    </h3>
+
+    <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+    <p>Each HTML page must include a reference to the external style sheet file inside the link element, inside the head section.</p>
+    <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+    <p>The external .css file should not contain any HTML tags.</p>
+    
+    <a href="CSS-Demo/External CSS.html">External CSS</a>
+
+    <h3>
+        Internal CSS
+    </h3>
+
+    <p>An internal style sheet may be used if one single HTML page has a unique style.</p>    
+    <p>The internal style is defined inside the style element, inside the head section.</p>
+
+
+    <a href="CSS-Demo/Internal CSS.html">Internal CSS</a>
+
+    <h3>
+        Inline CSS
+    </h3>
+
+    <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+    <p>The internal style is defined inside the style element, inside the head section.</p>
+    
+
+    <a href="CSS-Demo/Inline CSS.html">Inline CSS</a>
+
+
+    <h2>Multiple Style Sheets</h2>
+
+    <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. </p>
+
+    <a href="CSS-Demo/Multiple Style Sheets.html">Multiple Style Sheets</a>
+
+    <p>If link is above style, then the style will be internal</p>
+    <p>If style is above link, then the style will be external</p>
+
+
+    <h2>Cascading Order:</h2>
+
+    <ul>
+        <li>Inline will have the highest priority and overrides external or internal.</li>
+    </ul>
+
+    <h2>CSS Comments:</h2>
+
+    <ul>
+        <li>CSS comments are not displayed in the browser but help with documentation.</li>
+        <li>Comments are used to explain the code and helps when we want to edit the source code at a later date.</li>
+        <li>Comments are ignored by browsers</li>
+        <li>Css comment are placed in between /* and */</li>
+    </ul>
+
+    <a href="CSS-Demo/CSS Comments.css">CSS Comments</a><br>
+    <a href="CSS-Demo/HTML and CSS Comments.html">HTML and CSS Comments</a>
+
+    <h2>CSS Colors:</h2>
+
+    <ul>
+        <li>Colors are specified using predefined </li>
+        <ul>
+            <li>Color names</li>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HEX</li>
+            <li>HSL</li>
+            <li>HSLA</li>
+        </ul>
+    </ul>
+
+    <a href="https://www.w3schools.com/colors/colors_names.asp">CSS Colors</a><br>
+
+    <h2>CSS Background Color:</h2>
+
+    <a href="CSS-Demo/CSS Background Colors.html">CSS Background Colors</a>
+
+    <h2>CSS Text Color:</h2>
+
+    <a href="CSS-Demo/CSS Text Colors.html">CSS Text Colors</a>
+
+    <h2>CSS Border Color:</h2>
+
+    <a href="CSS-Demo/CSS Border Colors.html">CSS Border Colors</a>
+
+    <h2>CSS Color Values:</h2>
+
+    <a href="CSS-Demo/CSS Color Values.html">CSS Color Values</a><br>
+    <a href="https://www.w3schools.com/CSS/css_colors_rgb.asp">RGB Colors</a><br>
+    <a href="https://www.w3schools.com/CSS/css_colors_hex.asp">HEX Colors</a><br>
+    <a href="https://www.w3schools.com/CSS/css_colors_hsl.asp">HSL Colors</a>
+
+
+    <h2>CSS Backgrounds:</h2>
+
+    <ul>
+        <li>The CSS background properties are used to add background effects for elements.</li>
+        <ul>
+            <li>Background Color</li>
+            <li>Background Image</li>
+            <li>Background Repeat</li>
+            <li>Background Attachment</li>
+            <li>Background Position</li>
+            <li>Background(shorthand property)</li>
+        </ul>
+    </ul>
+
+    <h2>CSS Background Color:</h2>
+
+    <a href="CSS-Demo/CSS background-color.html">CSS Background Color</a>
+
+    <h2>CSS Background Image:</h2>
+
+    <a href="CSS-Demo/CSS background-image.html">CSS Background Image</a>
+
+    <h2>CSS Background Repeat:</h2>
+
+    <a href="CSS-Demo/CSS background-repeat.html">CSS Background Repeat</a>
+
+    <h2>CSS Background Position:</h2>
+
+    <a href="CSS-Demo/CSS background-position.html">CSS Background Position</a>
+
+    <h2>CSS Background Attachment:</h2>
+
+    <a href="CSS-Demo/CSS background-attachment.html">CSS Background Attachment</a>
+
+    <h2>CSS Background Shorthand:</h2>
+
+    <li>Instead of writing the entire property of background.</li>
+    <pre>
+        body {
+            background-color: #ffffff;
+            background-image: url("img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+          }
+    </pre>
+    <li>We can write this to shorten</li>
+    <pre>
+        body {
+            background: #ffffff url("img_tree.png") no-repeat right top;
+          }
+    </pre>
+    <li>The order of the shorthand values should be</li>
+    <ul>
+        <li>color</li>
+        <li>image</li>
+        <li>repeat</li>
+        <li>attachment</li>
+        <li>position</li>
+    </ul>
+
+    <h2>CSS Borders:</h2>
+
+    <p>The CSS border properties allow you to specify the style, width, and color of an element's border.</p>
+
+
+
+
+        
+    </body>
+</html>
