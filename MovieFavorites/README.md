@@ -8,3 +8,12 @@
 <h2>Skills Used:</h2>
 
 <img src="icons8-html.svg" alt = "HTML">
+
+<h3>Tags Used:</h3>
+
+<ul>
+    <li>Headings</li>
+    <li>Horizontal Break</li>
+    <li>Break</li>
+    <li>Paragraphs</li>
+</ul>
