@@ -1,0 +1,14 @@
+CRUD
+
+https://sqliteonline.com/
+
+Create
+
+Create - Create Table and Insert
+Read - Select
+Update - update, Alter
+Delete - Delete
+
+SQL Relationships
+Foreign Keys and Inner Joins
+
