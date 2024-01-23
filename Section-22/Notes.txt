@@ -1,0 +1,39 @@
+Full Stack Web Developer
+
+> Front End + Back End
+
+Server
+Application - Logic(respond to request) running on the server
+Data Base
+
+Web Pages --> Front End (HTML, CSS, JS) --> Static Web Pages
+Web Application --> Do something other than view web Pages
+
+
+Login functionality
+
+Tools and Technologies for building backend
+
+Front End
+
+* HTML
+* CSS
+* Javascript
+    * Angular
+    * React
+    * Vue
+    * jQuery
+
+Backend
+
+* Java - spring framework
+* Ruby - rails
+* Python - flask and django
+* C Sharp - ASP.net
+* Java script - node js
+* php - Laravel or cake
+
+
+https://www.djangoproject.com/
+https://flask.palletsprojects.com/en/3.0.x/
+
