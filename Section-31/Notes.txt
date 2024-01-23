@@ -1,0 +1,20 @@
+Databases
+
+Data Persistence
+
+Data Storage
+
+SQL (Structured Query language)
+
+* Oracle
+* mySQL
+* Postgres
+* SQLlite
+* MS SQL
+
+No SQL (Not only SQL)
+
+* MongoDB
+* Redis
+* DynamoDB
+

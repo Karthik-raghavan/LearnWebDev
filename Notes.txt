@@ -43,4 +43,5 @@ Do:
 <p>Para 1</p>
 <p>Para 2</p>
 
-<>Continue with Lecture 16<>
+List Elements > Order and Unordered List
+
